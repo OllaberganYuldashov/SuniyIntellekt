@@ -4,6 +4,7 @@ from sklearn.tree import DecisionTreeClassifier
 import matplotlib.pyplot as plt
 
 df = pandas.read_csv("datasets/iris.csv")
+print(df.describe())
 d = {'Iris-setosa': 0, 'Iris-versicolor': 1,'Iris-virginica':2}
 df['Class'] = df['Class'].map(d)
 
