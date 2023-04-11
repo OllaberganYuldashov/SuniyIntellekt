@@ -1,9 +1,9 @@
-import numpy as np
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.datasets import load_iris
-import matplotlib.pyplot as plt
+
 iris=load_iris()
 #print(iris)
+
 knn = KNeighborsClassifier(n_neighbors=11)
 X,y=iris.data,iris.target
 knn.fit(X,y)
