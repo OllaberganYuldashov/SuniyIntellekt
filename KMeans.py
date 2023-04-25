@@ -2,8 +2,8 @@ import matplotlib.pyplot as plt
 from sklearn.cluster import KMeans
 kmean=KMeans(n_clusters=3)
 
-x=[9,6,11,10,7,12,2,1,8,10]
-y=[15,12,9,4,10,4,3,1,4,1]
+x=[14,12,6,5,4,9,13,9,3,1]
+y=[6,7,4,8,2,5,12,12,1,10]
 data=list(zip(x,y))
 kmean.fit(data)
 print(kmean.cluster_centers_)

@@ -26,5 +26,8 @@ y = df['Play']
 dtree = DecisionTreeClassifier()
 dtree = dtree.fit(X, y)
 
+print(dtree.predict([[0,0,0,0]]))
 tree.plot_tree(dtree, feature_names=attributes)
 plt.show()
+
+
