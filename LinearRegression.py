@@ -4,8 +4,8 @@ import matplotlib.pyplot as plt
 import  numpy as np
 
 
-x=[2,3,4,6,1,2]
-y=[2,3,5,4,2,3]
+x=[16,16,8,4,64,8]
+y=[50,80,30,20,150,40]
 
 plt.scatter(x,y)
 plt.show()
@@ -19,4 +19,4 @@ l_reg.fit(x,y)
 
 print(l_reg.coef_)
 print(l_reg.intercept_)
-print(l_reg.predict(np.array([[10]])))
+print(l_reg.predict(np.array([[32]])))

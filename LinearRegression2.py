@@ -4,8 +4,8 @@ import matplotlib.pyplot as plt
 import  numpy as np
 
 
-x=[[2,3],[3,3],[4,2],[6,1],[1,6],[2,4]]
-y=[2,3,5,4,2,3]
+x=[[16,2],[16,3],[8,2],[4,2],[64,3],[8,3]]
+y=[80,100,30,20,150,40]
 
 
 x=pd.DataFrame(x)
@@ -17,4 +17,4 @@ l_reg.fit(x,y)
 
 print(l_reg.coef_)
 print(l_reg.intercept_)
-print(l_reg.predict(np.array([[10,3]])))
+print(l_reg.predict(np.array([[32,3]])))
