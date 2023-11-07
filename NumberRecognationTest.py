@@ -29,7 +29,7 @@ data[data==0]=-1
 data[data>0]=1
 
 X_train, X_test, y_train, y_test = train_test_split(
-    data, target, test_size=0.01, random_state=0)
+    data, target, test_size=0.001, random_state=0)
 
 #print(y_test.shape)
 def sign(output):
